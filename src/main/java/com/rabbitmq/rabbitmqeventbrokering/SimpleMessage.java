@@ -26,4 +26,8 @@ public class SimpleMessage implements Serializable {
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        return "SimpleMessage { name=" + this.name + ", description=" + this.description + "}";
+    }
 }

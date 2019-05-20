@@ -22,6 +22,6 @@ public class RabbitmqEventBrokeringApplication implements CommandLineRunner {
         SimpleMessage message = new SimpleMessage();
         message.setName("Simple message");
         message.setDescription("Simple Description");
-        rabbitTemplate.convertAndSend("TestExchange", "testRouting", message);
+        rabbitTemplate.convertAndSend("MyTopicExchange", "topic", message);
     }
 }
